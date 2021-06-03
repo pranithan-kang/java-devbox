@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  terminalserver:
+    build:
+      context: .
+      args:
+        TERMINAL_USER: "ubuntu"
+    container_name: uxrdp
+    hostname: terminalserver
+    shm_size: 1g
+    ports:
+      - "9999:3389"
+      - "2222:22"
+    volumes:
+      - ./volume:/home
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
