@@ -25,5 +25,9 @@ RUN apt install code
 # Setup Git
 RUN apt -y install git
 
+## Don't know why the technique is not working, https://stackoverflow.com/questions/58513266/how-to-install-multiple-extensions-in-vscode-using-command-line
+## ---
+# COPY vscode-extensions.txt /etc/profile.d/
+
 # Startup Script
 COPY startup.sh /etc/profile.d/
