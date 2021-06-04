@@ -11,9 +11,11 @@ export DONT_PROMPT_WSL_INSTALL="TRUE";
 code --install-extension vscjava.vscode-java-pack --force;
 code --install-extension gabrielbb.vscode-lombok --force;
 code --install-extension redhat.fabric8-analytics --force;
-code --install-extension eamodio.gitlens --force;
 code --install-extension mtxr.sqltools --force;
 code --install-extension mtxr.sqltools-driver-pg --force;
+code --install-extension eamodio.gitlens --force;
+code --install-extension ryu1kn.partial-diff --force;
+code --install-extension humao.rest-client --force;
 
 ## Don't know why the technique is not working, https://stackoverflow.com/questions/58513266/how-to-install-multiple-extensions-in-vscode-using-command-line
 ## ---
