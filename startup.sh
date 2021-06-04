@@ -8,7 +8,7 @@ export PATH=$PATH:$JAVA_HOME/bin:${M2_HOME}/bin;
 export DONT_PROMPT_WSL_INSTALL="TRUE";
 
 # Install useful extension
-code --install-extension vscjava.vscode-java-pack
-code --install-extension eamodio.gitlens
-code --install-extension mtxr.sqltools
-code --install-extension mtxr.sqltools-driver-pg
+code --install-extension vscjava.vscode-java-pack --force
+code --install-extension eamodio.gitlens --force
+code --install-extension mtxr.sqltools --force
+code --install-extension mtxr.sqltools-driver-pg --force
