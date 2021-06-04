@@ -5,7 +5,6 @@ services:
       context: .
       args:
         TERMINAL_USER: "ubuntu"
-    container_name: uxrdp
     hostname: terminalserver
     shm_size: 1g
     ports:
